@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find & Explore</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+    <div id="menu-bar" class="fas fa-bars"></div>
+<!-- header section starts  -->
+
+<header>
+    <a href="Home.html" class="logo"><span>FIND </span>& <span>EXPLORE</span></a>
+
+    <nav class="navbar">
+        <a href="Home.html">home</a>
+        <a>|</a>
+        <a href="Places.html">places</a>
+        <a>|</a>
+        <a href="Gallery.html">gallery</a>
+        <a>|</a>
+        <a href="Contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="Enter your email">
+        <input type="password" class="box" placeholder="Enter your password">
+        <input type="submit" value="Login now" class="btn" onclick="myFunction()">
+        <p>Don't have an account? <a href="#">Register now</a></p>
+    </form>
+
+</div>
+<script>
+    function myFunction() {
+      alert("Your Are Logged In Succesfully");
+    }
+    </script>
+<br><br><br><br><br>
+<!--Map-->
+<div class="h1">
+    <h1>
+        <span>m</span>
+        <span>u</span>
+        <span>m</span>
+        <span>b</span>
+        <span>a</span>
+        <span>i</span>
+    </h1> 
+</div>
+
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+</script>
+<div class="map">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1htJkMZj5NTupDQW8FN0zyuOvHhW_Xvc-&ehbc=2E312F" width="550"
+height="400"></iframe>
+</div>
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>• Train -1] Deccan Queen Express<br>
+                2] Intercity Express (all days)<br>
+                • Flights at Mumbai International Airport
+                </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Recommended hotels</h3>
+            <p>1) The Royal Orchid – 2116/-<br>
+            2 ) Ginger Mumbai – 7559/-<br>
+            3) Lemon Tree – 7640/-<br>
+            4) The Fern Residency – 6495/-</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Recommended Restaurants</h3>
+            <p>▪ Trupti Restaurant<br>
+                ▪ Gurukripa<br>
+                ▪ The Bombay Canteen<br>
+                ▪ Lake View Cafe<br>
+                </p>   
+        </div>
+        <br>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>places around</h3>
+            <p>I) Imagica Park<br>
+                II) Marine Drive<br>
+                III) Juhu Beach<br>
+                IV) Gateway of India<br>
+                V) Siddhi Vinayak Temple</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>⁕ Sanjay Gandhi National Park<br>
+                ⁕ Bird Watching in Bhandup<br>
+                ⁕ Excursion to Matheran Hill Station<br>
+                ⁕ Lohgad Fort Trek</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+<!--Map ends-->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Dreaming of a getaway? Let us make the arrangements for you. Find & Explore has been offering first-class travel
+                planning services and guidance since 2018. Our skilled agents are experts at finding the lowest fares and
+                helping you
+                secure the best travel deals. With our established industry connections, we can offer unique travel promotions
+                that you
+                just can’t find anywhere else. Contact us today for a free consultation. We’re here to make your experience as
+                seamless
+                and relaxing as possible.</p>        </div>
+        
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.instagram.com/"target="_blank">instagram</a>
+            <a href="https://www.facebook.com/"target="_blank">facebook</a>
+            <a href="https://twitter.com/" target="_blank">twitter</a>
+            <a href="https://www.linkedin.com/"target="_blank">linkedin</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
